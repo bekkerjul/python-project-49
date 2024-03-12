@@ -1,7 +1,5 @@
 from random import randint
-from ..cly import welcome_user
 from .brain_games import welcome_game
-
 
 def is_even(num):
     return 'yes' if num % 2 == 0 else 'no'
