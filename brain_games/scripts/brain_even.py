@@ -1,11 +1,12 @@
 from random import randint
 from .brain_games import welcome_game
+from ..cly import welcome_user
 
 def is_even(num):
     return 'yes' if num % 2 == 0 else 'no'
 
 def even_game():
-    name = welcome_game()
+    name = welcome_user()
     points = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
