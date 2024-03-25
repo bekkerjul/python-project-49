@@ -1,7 +1,8 @@
-def logic(question, correct_answer):
+def logic(question, correct_answer, points):
     print(question)
     answer = int(input())
     if answer == correct_answer:
-        return True
+        points += 1
+        return points
     else:
-        return False
+        return f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'\nLet's try again, {name}!"
