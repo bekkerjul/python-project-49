@@ -4,4 +4,5 @@ from ..cly import welcome_user
 
 def welcome_game():
     print('Welcome to the Brain Games!')
-    print(welcome_user())
+    name = welcome_user()
+    return name

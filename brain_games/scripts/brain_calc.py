@@ -3,15 +3,15 @@ from ..cly import welcome_user
 from random import randint, choice
 
 def brain_calc():
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
-    name = welcome_user()
+    name = welcome_game()
     points = 0
 
     print('What is the result of the expression?')
-    operator = choice(['+', '-', '*'])
 
     while points < 3:
+        num1 = randint(1, 100)
+        num2 = randint(1, 100)
+        operator = choice(['+', '-', '*'])
         print(f'Question: {num1} {operator} {num2}')
 
         if operator == '+':
@@ -31,3 +31,10 @@ def brain_calc():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'\nLet's try again, {name}!")
 
     print(f'Congratulations, {name}')
+
+
+def main():
+    brain_calc()
+
+if __name__ == '__main__':
+    main()
