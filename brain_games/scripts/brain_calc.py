@@ -1,12 +1,13 @@
 from .brain_games import welcome_game
 from ..cly import welcome_user
 from random import randint, choice
+from .logic_game import logic
 
 def brain_calc():
     name = welcome_game()
     points = 0
 
-    print('What is the result of the expression?')
+    question = 'What is the result of the expression?'
 
     while points < 3:
         num1 = randint(1, 100)
@@ -20,15 +21,11 @@ def brain_calc():
             correct_answer = num1 - num2
         else:
             correct_answer = num1 * num2
-
-        answer = int(input('Your answer: '))
-
-        if answer == correct_answer:
+        flag = logic(question, correct_answer, points, name)
+        if flag == True:
             points += 1
-            print(f'Correct!')
         else:
-            points = 0
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'\nLet's try again, {name}!")
+            print(flag)
 
     print(f'Congratulations, {name}')
 
