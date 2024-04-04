@@ -11,16 +11,20 @@ def progression():
         first_num = randint(1, 10)
         step = randint(1, 10)
         len_pogression = randint(5, 15)
-        random_index = randint(0, len_pogression)
         progression_list = []
 
-        for num in range(first_num, len_pogression + 1, step):
-            progression_list.append(num)
+        for i in range(0, len_pogression):
+            progression_list.append(0)
 
+        progression_list[0] = first_num
+
+        for i in range(1, len_pogression):
+            progression_list[i] = progression_list[i - 1] + step
+
+        random_index = randint(0, len_pogression - 1)
         correct_answer = progression_list[random_index]
-        progression_list[random_index ] = '..'
-        question = f'Question: {*progression_list}'
-        print(question)
+        progression_list[random_index] = '..'
+        question = f'Question: {" ".join(map(str, progression_list))}'
         flag = logic(question, correct_answer, points, name)
 
         if flag == True:
@@ -34,5 +38,5 @@ def progression():
 def main():
     progression()
 
-if name == 'main':
+if __name__ == '__main__':
     main()
