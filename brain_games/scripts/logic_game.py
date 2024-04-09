@@ -1,6 +1,8 @@
 def logic(question, correct_answer, points, name):
     print(question)
-    answer = int(input())
+    answer = input()
+    if answer.isdigit():
+        answer = int(answer)
     if answer == correct_answer:
         return True
     else:
