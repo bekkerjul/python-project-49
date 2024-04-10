@@ -12,6 +12,7 @@ def progression():
         step = randint(1, 10)
         len_pogression = randint(5, 15)
         progression_list = []
+        print(f'What number is missing in the progression?')
 
         for i in range(0, len_pogression):
             progression_list.append(0)
