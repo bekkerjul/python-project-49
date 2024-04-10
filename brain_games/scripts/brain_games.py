@@ -6,3 +6,9 @@ def welcome_game():
     print('Welcome to the Brain Games!')
     name = welcome_user()
     return name
+
+def main():
+    welcome_game()
+
+if __name__ == '__main__':
+    main()
