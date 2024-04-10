@@ -7,7 +7,7 @@ from .logic_game import logic
 def find_gcd(num):
     gcds = set()
     for elem in range(1, num + 1):
-        if elem % elem == 0:
+        if num % elem == 0:
             gcds.add(elem)
     return gcds
 
