@@ -27,8 +27,10 @@ def brain_gcd():
             points += 1
         else:
             print(flag)
+            break
 
-    print(f'Congratulations, {name}')
+    if points == 3:
+        print(f'Congratulations, {name}')
 
 
 def main():

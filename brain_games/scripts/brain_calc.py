@@ -21,13 +21,17 @@ def brain_calc():
             correct_answer = num1 - num2
         else:
             correct_answer = num1 * num2
+
         flag = logic(question, correct_answer, points, name)
+
         if flag == True:
             points += 1
         else:
             print(flag)
+            break
 
-    print(f'Congratulations, {name}')
+    if points == 3:
+        print(f'Congratulations, {name}')
 
 
 def main():
