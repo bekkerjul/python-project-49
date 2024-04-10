@@ -31,7 +31,7 @@ def brain_calc():
             break
 
     if points == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def main():

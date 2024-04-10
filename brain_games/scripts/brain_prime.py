@@ -34,7 +34,7 @@ def brain_prime():
             break
 
     if points == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def main():

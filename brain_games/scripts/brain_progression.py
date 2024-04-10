@@ -34,7 +34,7 @@ def progression():
             break
 
     if points == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def main():
