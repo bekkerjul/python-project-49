@@ -1,11 +1,11 @@
 from .brain_games import welcome_game
-from ..cly import welcome_user
 from random import randint, choice
 from .logic_game import logic
 
 def brain_calc():
     name = welcome_game()
     points = 0
+
 
     question = 'What is the result of the expression?'
 
