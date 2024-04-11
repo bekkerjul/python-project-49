@@ -29,13 +29,13 @@ def brain_calc():
             print(flag)
             break
 
-
     if points == 3:
         print(f'Congratulations, {name}!')
 
 
 def main():
     brain_calc()
+
 
 if __name__ == '__main__':
     main()

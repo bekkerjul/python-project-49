@@ -1,9 +1,10 @@
 from random import randint
-from .brain_games import welcome_game
 from ..cly import welcome_user
+
 
 def is_even(num):
     return 'yes' if num % 2 == 0 else 'no'
+
 
 def even_game():
     name = welcome_user()
@@ -25,8 +26,10 @@ def even_game():
     if points == 3:
         print(f'Congratulations, {name}!')
 
+
 def main():
     even_game()
+
 
 if __name__ == '__main__':
     main()
