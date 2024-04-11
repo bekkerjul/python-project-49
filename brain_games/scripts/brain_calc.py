@@ -2,11 +2,10 @@ from .brain_games import welcome_game
 from random import randint, choice
 from .logic_game import logic
 
+
 def brain_calc():
     name = welcome_game()
     points = 0
-
-
     question = 'What is the result of the expression?'
 
     while points < 3:
@@ -17,18 +16,19 @@ def brain_calc():
 
         if operator == '+':
             correct_answer = sum([num1, num2])
-        elif  operator == '-':
+        elif operator == '-':
             correct_answer = num1 - num2
         else:
             correct_answer = num1 * num2
 
         flag = logic(question, correct_answer, points, name)
 
-        if flag == True:
+        if flag:
             points += 1
         else:
             print(flag)
             break
+
 
     if points == 3:
         print(f'Congratulations, {name}!')
