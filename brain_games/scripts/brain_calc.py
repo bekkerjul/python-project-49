@@ -23,7 +23,7 @@ def brain_calc():
 
         flag = logic(question, correct_answer, points, name)
 
-        if flag:
+        if flag is True:
             points += 1
         else:
             print(flag)
