@@ -1,5 +1,4 @@
 from .brain_games import welcome_game
-from ..cly import welcome_user
 from random import randint
 from .logic_game import logic
 
@@ -23,7 +22,7 @@ def brain_gcd():
         print(f'Question: {num1} {num2}')
         correct_answer = max(list(find_gcd(num1) & find_gcd(num2)))
         flag = logic(question, correct_answer, points, name)
-        if flag == True:
+        if flag is True:
             points += 1
         else:
             print(flag)
@@ -35,6 +34,7 @@ def brain_gcd():
 
 def main():
     brain_gcd()
+
 
 if __name__ == '__main__':
     main()

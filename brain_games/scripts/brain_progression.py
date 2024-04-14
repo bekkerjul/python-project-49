@@ -12,7 +12,7 @@ def progression():
         step = randint(1, 10)
         len_pogression = randint(5, 15)
         progression_list = []
-        print(f'What number is missing in the progression?')
+        print('What number is missing in the progression?')
 
         for i in range(0, len_pogression):
             progression_list.append(0)
@@ -28,7 +28,7 @@ def progression():
         question = f'Question: {" ".join(map(str, progression_list))}'
         flag = logic(question, correct_answer, points, name)
 
-        if flag == True:
+        if flag is True:
             points += 1
         else:
             print(flag)
@@ -40,6 +40,7 @@ def progression():
 
 def main():
     progression()
+
 
 if __name__ == '__main__':
     main()

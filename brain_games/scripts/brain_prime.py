@@ -1,7 +1,7 @@
 from .brain_games import welcome_game
-from ..cly import welcome_user
 from random import randint
 from .logic_game import logic
+
 
 def is_prime(num):
     dividers = []
@@ -19,7 +19,7 @@ def is_prime(num):
 def brain_prime():
     name = welcome_game()
     points = 0
-    question = f'Answer "yes" if given number is prime. Otherwise answer "no".'
+    question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
     while points < 3:
         num = randint(1, 100)
@@ -27,7 +27,7 @@ def brain_prime():
         correct_answer = is_prime(num)
         flag = logic(question, correct_answer, points, name)
 
-        if flag == True:
+        if flag is True:
             points += 1
         else:
             print(flag)
@@ -39,6 +39,7 @@ def brain_prime():
 
 def main():
     brain_prime()
+
 
 if __name__ == '__main__':
     main()
