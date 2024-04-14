@@ -22,5 +22,5 @@ package-reinstall:
 
 
 
-make lint:
+lint:
 	poetry run flake8 brain_games
