@@ -20,7 +20,8 @@ def even_game():
             print('Correct!')
             points += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
+            print(f"Let's try again, {name}!")
             break
 
     if points == 3:
