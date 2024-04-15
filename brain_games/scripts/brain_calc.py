@@ -26,6 +26,7 @@ def brain_calc():
         if flag is True:
             points += 1
         else:
+            print(flag)
             break
 
     if points == 3:
