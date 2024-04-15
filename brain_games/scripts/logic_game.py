@@ -4,8 +4,8 @@ def logic(question, correct_answer, points, name):
     if answer.isdigit() or answer[1:].isdigit():
         answer = int(answer)
     if answer == correct_answer:
-        return True
+	return True
     else:
-        print(f"'{answer}' is wrong answer ;(.", end = ' ')
-        print(f"Correct answer was '{correct_answer}'")
-        print(f"Let's try again, {name}!")
+	print(f"'{answer}' is wrong answer ;(.", end=' ')
+	print(f"Correct answer was '{correct_answer}'")
+	print(f"Let's try again, {name}!")
