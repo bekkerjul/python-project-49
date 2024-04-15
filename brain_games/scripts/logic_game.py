@@ -7,5 +7,5 @@ def logic(question, correct_answer, points, name):
         return True
     else:
         return f"'{answer}' is wrong answer ;(." \
-f"Correct answer was '{correct_answer}'"\
-f"Let's try again, {name}!"
+               f"Correct answer was '{correct_answer}'" \
+               f"Let's try again, {name}!"
