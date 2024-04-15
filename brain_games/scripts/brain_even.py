@@ -2,16 +2,17 @@ from random import randint
 from ..cly import welcome_user
 
 
-def is_even(num):
-    return 'yes' if num % 2 == 0 else 'no'
+def is_even():
+    num = randint(0, 10000000)
+    print(f'Question: {num}')
+    answer = int(input('Your answer: '))
+    return 'yes' if answer % 2 == 0 else 'no', answer
 
 
 def even_game():
-    name = welcome_user()
-    points = 0
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    question = 'Answer "yes" if the number is even, otherwise answer "no".'
+    is_even()
 
-    while points < 3:
         num = randint(0, 10000000)
         print(f'Question: {num}')
         answer = input('Your answer: ')
