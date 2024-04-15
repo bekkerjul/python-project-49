@@ -6,6 +6,6 @@ def logic(question, correct_answer, points, name):
     if answer == correct_answer:
 	return True
     else:
-        print(f"'{answer}' is wrong answer ;(.", end=' ')
-        print(f"Correct answer was '{correct_answer}'")
-        print(f"Let's try again, {name}!")
+        return f"'{answer}' is wrong answer ;(." \
+        f"Correct answer was '{correct_answer}'"\
+        f"Let's try again, {name}!"
