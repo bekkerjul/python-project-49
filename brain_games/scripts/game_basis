@@ -4,11 +4,11 @@ from .brain_games import welcome_game
 def start(game): 
     name = welcome_game()
     points = 0
-    question = game[quest]
+    question = game[0]
     print(question) #тут должен быть импорт вопроса. Но остается непонятным как заставить движок распознать какую игру мы вызываем. Вопрос должен лежать и быть импортирован из игрового скрипта
     
     while points < 3:
-        flag = game[ans]    
+        flag = game[1]    
 
         if flag is True:
             print('Correct!')
