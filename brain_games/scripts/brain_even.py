@@ -12,7 +12,7 @@ def even_game():
     else:
         flag = False
 
-    return [question, flag]
+    return [question, flag, answer, correct_answer]
 
 
 def main():

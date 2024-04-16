@@ -1,18 +1,12 @@
-from .brain_games import welcome_game
 from random import randint, choice
-from .logic_game import logic
 
 
 def brain_calc():
-    name = welcome_game()
-    points = 0
     question = 'What is the result of the expression?'
-
-    while points < 3:
         num1 = randint(1, 100)
         num2 = randint(1, 100)
         operator = choice(['+', '-', '*'])
-        print(f'Question: {num1} {operator} {num2}')
+        answer = int(input('Your answer: '))
 
         if operator == '+':
             correct_answer = sum([num1, num2])
@@ -21,16 +15,12 @@ def brain_calc():
         else:
             correct_answer = num1 * num2
 
-        flag = logic(question, correct_answer, points, name)
-
-        if flag is True:
-            points += 1
+        if answer == correct_answer:
+            flag = True
         else:
-            print(flag)
-            break
+            flag = False
 
-    if points == 3:
-        print(f'Congratulations, {name}!')
+    return [question, flag, answer, correct_answer]
 
 
 def main():
