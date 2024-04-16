@@ -1,29 +1,30 @@
 from .brain_games import welcome_game
 
 
-def logic(): 
+def start(game): 
     name = welcome_game()
     points = 0
+    question = game[quest]
     print(question) #тут должен быть импорт вопроса. Но остается непонятным как заставить движок распознать какую игру мы вызываем. Вопрос должен лежать и быть импортирован из игрового скрипта
     
     while points < 3:
-        #тут должна вызываться функция из игрового скрипта, которая будет реализовывать логику конкретной игры
+        flag = game[ans]    
 
-       if flag is True:
-           print('Correct!')
-           points += 1
-       else:
-           print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
-           print(f"Let's try again, {name}!")
-           break
+        if flag is True:
+            print('Correct!')
+            points += 1
+        else:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+            print(f"Let's try again, {name}!")
+            break
 
 
     if points == 3:
-      print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')
 
 
 def main():
-    logic()
+    start()
 
 
 if __name__ == '__main__':
