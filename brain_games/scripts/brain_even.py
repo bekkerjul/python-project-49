@@ -6,5 +6,5 @@ def main():
     engine.start(even)
 
 
-if name == 'main':
+if __name__ == '__main__':
     main()
