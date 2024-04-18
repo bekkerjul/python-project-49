@@ -8,7 +8,8 @@ def start(game):
     for _ in range(ROUNDS_COUNT):
         counter = 0
         question, answer = game.generate_round()
-        user_answer = input(f'Question: {question}')
+        print(f'Question: {question}')
+        user_answer = input('Your answer: ')
         if answer == user_answer:
             counter += 1
             print('Correct!')
