@@ -1,6 +1,6 @@
 from random import randint
 
-DESRIPTION = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_round():

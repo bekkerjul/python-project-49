@@ -6,5 +6,5 @@ def main():
     engine.start(progression)
 
 
-if name == 'main':
+if __name__ == '__main__':
     main()

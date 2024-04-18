@@ -1,6 +1,6 @@
 from random import randint, choice
 
-DESRIPTION = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def generate_round():

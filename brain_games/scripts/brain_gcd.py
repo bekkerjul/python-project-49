@@ -6,5 +6,5 @@ def main():
     engine.start(gcd)
 
 
-if name == 'main':
+if __name__ == '__main__':
     main()
