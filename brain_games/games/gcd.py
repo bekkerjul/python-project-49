@@ -6,7 +6,7 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 def find_divisors(num):
     divisors_list = []
     for n in range(1, num + 1):
-        divisors_list.append(n) if num % 2 == 0 else False
+        divisors_list.append(n) if num % n == 0 else False
     return set(divisors_list)
 
 
