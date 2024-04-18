@@ -13,7 +13,7 @@ def find_divisors(num):
 def generate_round():
     num1 = randint(1, 10)
     num2 = randint(1, 10)
-    question = str(num1) + ' ' + str(num2)
+    question = f'{num1} {num2}'
     answer = max(list(find_divisors(num1) & find_divisors(num2)))
-    return question, str(answer)
+    return str(question), str(answer)
 
