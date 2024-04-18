@@ -1,4 +1,4 @@
-from . import welcome_game
+from brain_games.scripts.brain_games import welcome_game
 
 ROUNDS_COUNT = 3
 
