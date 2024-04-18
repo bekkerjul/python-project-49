@@ -1,45 +1,10 @@
-from .brain_games import welcome_game
-from random import randint
-from .logic_game import logic
-
-
-def is_prime(num):
-    dividers = []
-
-    for elem in range(1, num + 1):
-        if num % elem == 0:
-            dividers.append(elem)
-
-    if len(dividers) == 2:
-        return 'yes'
-    else:
-        return 'no'
-
-
-def brain_prime():
-    name = welcome_game()
-    points = 0
-    question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-    while points < 3:
-        num = randint(1, 100)
-        print(f'Question: {num}')
-        correct_answer = is_prime(num)
-        flag = logic(question, correct_answer, points, name)
-
-        if flag is True:
-            points += 1
-        else:
-            print(flag)
-            break
-
-    if points == 3:
-        print(f'Congratulations, {name}!')
+from brain_games.games import prime
+from brain_games import engine
 
 
 def main():
-    brain_prime()
+    engine.start(prime)
 
 
-if __name__ == '__main__':
+if name == 'main':
     main()
