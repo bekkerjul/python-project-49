@@ -13,7 +13,7 @@ def start(game):
             counter += 1
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'."
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             break
 
