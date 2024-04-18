@@ -5,8 +5,8 @@ ROUNDS_COUNT = 3
 def start(game):
     name = welcome_game()
     print(game.DESCRIPTION)
+    counter = 0
     for _ in range(ROUNDS_COUNT):
-        counter = 0
         question, answer = game.generate_round()
         print(f'Question: {question}')
         user_answer = input('Your answer: ')
