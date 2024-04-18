@@ -1,6 +1,6 @@
 from random import randint
 
-DESRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_round():
