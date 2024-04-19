@@ -16,4 +16,3 @@ def generate_round():
     question = f'{num1} {num2}'
     answer = max(list(find_divisors(num1) & find_divisors(num2)))
     return str(question), str(answer)
-

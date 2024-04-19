@@ -10,4 +10,3 @@ def generate_round():
         dividers.append(num) if question % num == 0 else False
     answer = 'yes' if len(dividers) == 2 else 'no'
     return str(question), answer
-

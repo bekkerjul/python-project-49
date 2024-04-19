@@ -2,6 +2,7 @@ from brain_games.scripts.brain_games import welcome_game
 
 ROUNDS_COUNT = 3
 
+
 def start(game):
     name = welcome_game()
     print(game.DESCRIPTION)
@@ -14,11 +15,10 @@ def start(game):
             counter += 1
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(."\\\
+                  f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             break
 
     if counter == 3:
         print(f'Congratulations, {name}!')
-
-

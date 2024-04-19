@@ -16,5 +16,3 @@ def generate_round():
     else:
         answer = num1 * num2
     return question, str(answer)
-
-

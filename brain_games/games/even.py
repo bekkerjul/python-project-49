@@ -7,5 +7,3 @@ def generate_round():
     question = randint(0, 10000000)
     answer = 'yes' if question % 2 == 0 else 'no'
     return str(question), answer
-
-

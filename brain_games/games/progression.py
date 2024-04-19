@@ -22,4 +22,3 @@ def generate_round():
     progression_list[random_index] = '..'
     question = " ".join(map(str, progression_list))
     return question, str(answer)
-
