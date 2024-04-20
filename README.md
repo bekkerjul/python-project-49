@@ -1,12 +1,11 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/bekkerjul/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/bekkerjul/python-project-49/actions)
 
+<a href="https://codeclimate.com/github/bekkerjul/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/c595224a6a3a4ae11716/maintainability" /></a>
+
 ## About the project
 
-
-
-
-<a href="https://codeclimate.com/github/bekkerjul/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/c595224a6a3a4ae11716/maintainability" /></a>
+The Brain-games project is a set of intellectual games. There are five tasks to choose from: brain-gcd, brain-calc, brain-even, brain-prime and brain-progression. The user must determine the greatest common divisor, whether the number is even, and much more.
 
 
 <a href="https://asciinema.org/a/Eq9UiWfr6l7hUQoVQmx2k8c1O" target="_blank"><img src="https://asciinema.org/a/Eq9UiWfr6l7hUQoVQmx2k8c1O.svg" /></a>
